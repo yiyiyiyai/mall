@@ -139,7 +139,8 @@
       "react-app"
     ],
     "plugins": [
-      ["import",
+      [
+        "import",
         {
           "libraryName": "antd-mobile",
           "style": "css"
@@ -148,6 +149,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.13.0"
+    "babel-plugin-import": "^1.13.0",
+    "react-router-dom": "^5.1.2"
   }
 }
