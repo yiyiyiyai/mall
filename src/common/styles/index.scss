@@ -1,0 +1,200 @@
+.index-page{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .main{
+    flex:1;
+    overflow-y: auto;
+    margin-bottom: 50px;
+    .locationandmessage{
+      border: 1px solid red;
+      height: 60px;
+      background-color: aquamarine;
+      .location{
+        background-image: url('../../common/images/address-b.svg');
+        background-position:center left;
+        background-repeat:no-repeat;
+        background-size: 30px;
+        position: absolute;
+        color: #000000;
+        border: 1px solid blue;
+      }
+      .message{
+        top:0px;
+        background-image:url('../../common/images/msg@default.png');
+        background-repeat:no-repeat;
+        background-position:center left;
+        display:inline-block;
+        border: 1px solid green;
+      }
+    }
+    .header {
+      background-color: #eeeeee;
+    }
+    .body{
+      .principle{
+        width:100%;
+        height: 40px;
+        display: table;
+        text-align: center;
+        .desc{
+          font-size: 20px;
+          display: table-cell;
+          vertical-align:middle;
+        }
+      }
+      .cateul{
+        background-color: #ffffff;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        list-style:none;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 10px;
+        .cateli{
+          width:120px;
+          height: 130px;
+          .imgbtn{
+            background: url('../../common/images/school.jpg');
+            width:100px;
+            height:100px;
+            margin: 0 10px;
+            border:none;
+            background-size: 100% 100%;
+            border-radius: 50%;
+          }
+          .descbtn{
+            margin-top: 13px;
+          }
+        }
+      }
+      .limitedsale{
+        background-color: #ffffff;
+        width: 100%;
+        height: 415px;
+        .sale-header{
+          height: 65px;
+          .header-sale{
+            margin: 15px 15px;
+            float: left;
+            font-size: 30px;
+          }
+          .header-more{
+            margin: 17.5px 15px;
+            float: right;
+            font-size: 25px;
+          }
+        }
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        .saleitem{
+          overflow-x: auto;
+          background-color: #ffffff;
+          width:auto;
+          height:350px;
+          display:flex;
+          .item{
+            width: 250px;
+            height: 330px;
+            display: inline-block;
+            .item-img{
+              width:200px;
+              height:200px;
+              margin: 5px 15px;
+            }
+            .item-name{
+              margin:5px 25px ;
+              height: 50px;
+            }
+            .item-desc{
+              margin:5px 25px ;
+              .desc-bag{
+                width: 80px;
+                display: inline-block;
+                .item-discountprice{
+                  font-size: 25px;
+                  color: red;
+                }
+                .item-price{
+                  font-size: 22px;
+                  color: #808080;
+                  text-decoration: line-through;
+                }
+              }
+              .item-add{
+                display: inline-block;
+                float: right;
+                .item-addtocart{
+                  width:50px;
+                  height:50px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .featured {
+        background-color: #ffffff;
+        width: 100%;
+        height: 600px;
+        padding-left: 5% ;
+        margin-top: 2px;
+        .featured-header{
+          height: 65px;
+          .header{
+            margin: 15px -15px;
+            float: left;
+            font-size: 30px;
+            background-color:#ffffff;
+          }
+        }
+        .featureditem{
+          width: 45%;
+          height: 240px;
+          border:1px solid #cccccc;
+          border-radius: 5px;
+          display: inline-block;
+          .item{
+            .item-name{
+              margin: 5px auto 5px 5px;
+              font-size: 25px;
+              color: orangered;
+            }
+            .item-desc{
+              margin: 5px auto 5px 5px;
+              font-size: 22px;
+              color: dimgrey;
+            }
+            .item-img{
+              margin-top: 15px;
+              .item-img1{
+                margin-left: 5px;
+
+                width: 150px;
+                height: 150px;
+                display: inline-block;
+              }
+              .item-img2{
+                margin-left: 15px;
+                width: 150px;
+                height: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    width:100%;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+  }
+}
